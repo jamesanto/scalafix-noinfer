@@ -1,7 +1,7 @@
 lazy val V = _root_.scalafix.Versions
-lazy val scalafixVersion = V.version
+lazy val scalafixVersion = "0.9.15+46-4c23fac1-SNAPSHOT"
 // Use a scala version supported by scalafix.
-ThisBuild / scalaVersion := V.scala212
+ThisBuild / scalaVersion := "2.13.2"
 
 ThisBuild / organization := "com.eed3si9n.fix"
 ThisBuild / organizationName := "eed3si9n"
@@ -11,7 +11,7 @@ ThisBuild / scmInfo := Some(ScmInfo(url("https://github.com/eed3si9n/scalafix-no
 ThisBuild / developers := List(
   Developer("eed3si9n", "Eugene Yokota", "@eed3si9n", url("https://github.com/eed3si9n"))
 )
-ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version := "0.1.1-SNAPSHOT"
 ThisBuild / description := "A Scalafix rule to suppress specific type inference."
 ThisBuild / licenses := Seq("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
 
